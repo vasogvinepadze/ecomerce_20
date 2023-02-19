@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins' sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.header {
+  height: 80px;
+  width: 70%;
+  background-color: rgb(70, 66, 57);
+  border-radius: 3px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.header .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.cart {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 3px;
+  width: 80px;
+}
+
+.cart p {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background-color: rgb(216, 140, 140);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em;
+}
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 0 25px;
+  flex-grow: 1;
+}
+
+nav ul {
+  display: flex;
+  gap: 2em;
+}
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+/*  Search ---------------- */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#search {
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+}
+
+form :first-child {
+  height: 30px;
+}
+
+/* category------------ */
+#categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  gap: 15px;
+}
+.categoryButton {
+  border: 1px solid #5c5983;
+  padding: 1em 2.2em;
+  background-color: transparent;
+  color: #0b0b0b;
+  cursor: pointer;
+}
+.categoryButton:hover {
+  color: rgb(117, 117, 138);
+}
+
+.container {
+  display: flex;
+  width: 70%;
+  margin-bottom: 30px;
+}
+.uil-shopping-bag:hover {
+  cursor: pointer;
+  color: #333;
+}
+#root {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+#cartMain {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 380px;
+  min-height: 100vh;
+  padding: 20px;
+  background: #ccc;
+  box-shadow: -2px 0 4px hsl(0 4% 15%/10%);
+  transition: 0.5s;
+}
+#cartMain.active {
+  right: 0;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  background-color: goldenrod;
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 10px 0;
+  border-top: 1px solid #333;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(34, 33, 31);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.img-box {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.images {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+.bottom {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+}
+
+h2 {
+  font-size: 20px;
+  color: red;
+}
+
+button {
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(70, 67, 62);
+  padding: 7px 25px;
+  cursor: pointer;
+  color: rgb(107, 107, 107);
+}
+
+button:hover {
+  background-color: #d10303;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.row-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowimg {
+  max-width: 43px;
+  max-height: 43px;
+  border-radius: 50%;
+}
+
+.uil-trash:hover {
+  cursor: pointer;
+  color: #6e3a3a;
+}

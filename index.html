@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add card</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <p class="logo">ShopiFy</p>
+      <div class="cart">
+        <i class="uil uil-shopping-bag" id="cartIcon"></i>
+        <p id="count">0</p>
+      </div>
+    </div>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Main</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form>
+      <input type="search" id="search" placeholder="Search" />
+    </form>
+
+    <div id="categories">
+      <button class="categoryButton">ALL</button>
+      <button class="categoryButton">MEN</button>
+      <button class="categoryButton">WOMEN</button>
+      <button class="categoryButton">KIDS</button>
+    </div>
+
+    <div class="container"></div>
+    <div id="root"></div>
+
+    <div class="cartmain" id="cartMain">
+      <!-- content -->
+      <div class="cartContent">
+        <div class="cartBox">
+          <div class="sidebar" id="cartMain>
+          <div class="head"><p>My Cart</p></div>
+          <div id="cartItem">Your cart is empty</div>
+          <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">0.00$</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- buy button -->
+      <button type="button" class="btnBuy">Buy Now</button>
+      <!-- Cart Close -->
+      <i class="uil uil-times" id="closeCart"></i>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
